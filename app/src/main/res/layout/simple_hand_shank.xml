@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/shs_left_top"
+        android:layout_width="wrap_content"
+        android:src="@drawable/button_gray"
+        app:layout_heightPercent="25%"
+        android:layout_above="@+id/shs_left_center"
+        android:layout_alignParentStart="true" />
+    <ImageView
+        android:id="@+id/shs_left_center"
+        android:layout_width="wrap_content"
+        android:src="@drawable/button_gray"
+        app:layout_heightPercent="25%"
+        android:layout_above="@+id/shs_left_bottom"
+        android:layout_toEndOf="@+id/shs_left_top" />
+    <ImageView
+        android:id="@+id/shs_left_bottom"
+        android:layout_width="wrap_content"
+        android:src="@drawable/button_gray"
+        app:layout_heightPercent="25%"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/shs_left_center" />
+    <ImageView
+        android:id="@+id/shs_right_top"
+        android:layout_width="wrap_content"
+        android:src="@drawable/button_gray"
+        app:layout_heightPercent="25%"
+        android:layout_above="@+id/shs_right_center"
+        android:layout_alignParentEnd="true" />
+    <ImageView
+        android:id="@+id/shs_right_center"
+        android:layout_width="wrap_content"
+        android:src="@drawable/button_gray"
+        app:layout_heightPercent="25%"
+        android:layout_above="@+id/shs_right_bottom"
+        android:layout_toStartOf="@+id/shs_right_top" />
+
+    <ImageView
+        android:id="@+id/shs_right_bottom"
+        android:layout_width="wrap_content"
+        android:src="@drawable/button_gray"
+        app:layout_heightPercent="25%"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/shs_right_center" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        app:layout_heightPercent="100%"
+        android:layout_alignTop="@+id/shs_left_top"
+        android:layout_centerHorizontal="true">
+        <Button
+            android:id="@+id/shs_center_key"
+            android:text="@string/change_key"
+            android:textSize="12sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Switch
+            android:id="@+id/simple_gravity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/chosen_gravity" />
+    </LinearLayout>
+
+
+</android.support.percent.PercentRelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.example.ljz131.myapplication.TouchPad
+        android:id="@+id/tp_the_touch_pad"
+        android:layout_width="match_parent"
+        android:background="#aaaaaa"
+        app:layout_heightPercent="80%"
+        app:layout_widthPercent="100%">
+    </com.example.ljz131.myapplication.TouchPad>
+    <Button
+        android:id="@+id/tp_left_click"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        app:layout_heightPercent="20%"
+        app:layout_widthPercent="40%"
+        android:text="left"/>
+    <Button
+        android:id="@+id/tp_right_click"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        app:layout_heightPercent="20%"
+        app:layout_widthPercent="40%"
+        android:text="right"
+        />
+    <Button
+        android:id="@+id/tp_silde_up"
+        android:layout_above="@+id/tp_silde_down"
+        android:layout_toStartOf="@+id/tp_right_click"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="20%"
+        android:text="up"
+        />
+    <Button
+        android:id="@+id/tp_silde_down"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/tp_right_click"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="20%"
+        android:text="down"
+        />
+
+</android.support.percent.PercentRelativeLayout>

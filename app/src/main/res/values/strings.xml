@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">模拟手柄</string>
+
+    <string name="simple_hand_shank">六键+重力感应</string>
+    <string name="complicated_hand_shank">四按键+两摇杆+重力感应</string>
+    <string name="touch_pad">触摸板</string>
+
+    <string name="left_second">左二</string>
+    <string name="left_first">左一</string>
+    <string name="right_second">右二</string>
+    <string name="right_first">右一</string>
+
+    <string name="link">连接电脑</string>
+    <string name="change_key">更改键位</string>
+    <string name="change_ip">更改IP</string>
+    <string name="test_text">左摇杆:\n右摇杆:\n重力感应:</string>
+    <string name="chosen_gravity">重力感应:关</string>
+    <string name="eight_or_four">摇杆键组合</string>
+
+    <string name="choose_complicated">手柄模式</string>
+    <string name="choose_simple">按键模式</string>
+    <string name="choose_touchpad">触摸板</string>
+
+
+</resources>

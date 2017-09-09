@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/chs_left_first"
+        android:text="@string/left_first"
+        android:textSize="24sp"
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="40%"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/chs_left_second"
+        android:text="@string/left_second"
+        android:textSize="24sp"
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="40%"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/chs_left_first" />
+    <Button
+        android:id="@+id/chs_right_second"
+        android:text="@string/right_second"
+        android:textSize="24sp"
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="40%"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/chs_right_first" />
+
+    <Button
+        android:id="@+id/chs_right_first"
+        android:text="@string/right_first"
+        android:textSize="24sp"
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="40%"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+    <LinearLayout
+        android:orientation="vertical"
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="40%"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/chs_left_second"
+        android:gravity="center"
+        android:id="@+id/two_button">
+        <Button
+            android:id="@+id/chs_center_key"
+            android:text="@string/change_key"
+            android:textSize="12sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Switch
+            android:id="@+id/complicated_gravity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/chosen_gravity" />
+
+        <Switch
+            android:id="@+id/complicated_EightorFour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/eight_or_four"/>
+
+    </LinearLayout>
+
+
+
+    <com.example.ljz131.myapplication.RockerView
+        android:id="@+id/rockerView_left"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="60%"
+        android:text="@string/test_text"
+        android:id="@+id/chs_text"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/chs_left_second" />
+
+    <com.example.ljz131.myapplication.RockerView
+        android:id="@+id/rockerView_right"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"/>
+
+</android.support.percent.PercentRelativeLayout>

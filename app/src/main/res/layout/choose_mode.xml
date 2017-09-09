@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        app:layout_widthPercent="70%"
+        app:layout_heightPercent="10%"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/change_ip_text"
+        android:textAlignment="center"/>
+    <Button
+        app:layout_widthPercent="30%"
+        app:layout_heightPercent="10%"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@id/change_ip_text"
+        android:id="@+id/change_ip"
+        android:text="@string/change_ip"/>
+    <Button
+        android:id="@+id/mode1"
+        android:text="@string/complicated_hand_shank"
+        android:layout_below="@id/change_ip_text"
+        android:textSize="24sp"
+        android:layout_marginBottom="8sp"
+        app:layout_widthPercent="99%"
+        app:layout_heightPercent="29%"
+        android:background="#efefef" />
+    <Button
+        android:id="@+id/mode2"
+        android:text="@string/simple_hand_shank"
+        android:layout_below="@id/mode1"
+        android:textSize="24sp"
+        android:layout_marginBottom="5sp"
+        app:layout_widthPercent="99%"
+        app:layout_heightPercent="29%"
+        android:background="#efefef" />
+
+    <Button
+        android:id="@+id/mode3"
+        android:layout_alignParentBottom="true"
+        android:background="#efefef"
+        android:text="@string/touch_pad"
+        android:textSize="24sp"
+        app:layout_heightPercent="29%"
+        app:layout_widthPercent="99%" />
+</android.support.percent.PercentRelativeLayout>
